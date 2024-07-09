@@ -12,5 +12,11 @@
             alert("no")
         }
     }
+    function refresh() {
+        fetch("https://swmad.vercel.app/test/code.json")
+            .then(response => response.json())
+            .then(data => {encoded = data})
+    }
 </script>
 <button onclick="doit()">check the passcode</button>
+<button onclick="refresh()">refresh the passcode</button>
