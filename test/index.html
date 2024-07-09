@@ -1,7 +1,7 @@
 <script>
     var access = prompt("Enter the password to access the website")
     var encoded = fetch("https://swmad.vercel.app/test/code.json").then(response => response.json()).then(data => {return data})
-    var decoded = atob(atob(atob(encoded)))
+    var decoded = atob(atob(atob(encoded['code'])))
     if (access === decoded) {
         alert("yes")
     } else {
