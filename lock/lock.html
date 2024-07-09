@@ -2,6 +2,10 @@
     var passcode = 0
     while (passcode != "123switch") {
         var passcode = prompt("enter the passcode")
+        if (passcode != "123switch") {
+            alert("incorrect")
+        }
     }
 </script>
-tada
+<h1>you guessed the passcode</h1>
+<button onclick="window.location.href='https://swmad.vercel.app'">take me back to the menu</button>
