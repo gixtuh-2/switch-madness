@@ -1,0 +1,10 @@
+<script>
+    let encoded
+    fetch("https://swmad.vercel.app/test/code.json")
+        .then(r => r.json())
+        .then(d => {encoded = d})
+    function check() {
+        var decoded = atob(atob(atob(encoded['code'])))
+        alert(decoded)
+    }
+</script>
