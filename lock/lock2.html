@@ -3,13 +3,14 @@
     if (correct === null) {
         alert("taking you back; you clicked cancel.")
         window.location.href = "https://swmad.vercel.app"
-    }
-    var title = prompt("enter your cool title")
-    var passcode = 0
-    while (passcode != correct) {
-        var passcode = prompt(title)
-        if (passcode != correct) {
-            alert("incorrect")
+    } else {
+        var title = prompt("enter your cool title")
+        var passcode = 0
+        while (passcode != correct) {
+            var passcode = prompt(title)
+            if (passcode != correct) {
+                alert("incorrect")
+            }
         }
     }
 </script>
