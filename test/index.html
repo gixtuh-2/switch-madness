@@ -2,7 +2,7 @@
     let encoded;
     fetch("https://swmad.vercel.app/test/code.json")
         .then(response => response.json())
-        .then(data => {encoded = data})
+        .then(data => { encoded = data })
     function doit() {
         var access = prompt("Enter the password to access the website")
         var decoded = atob(atob(atob(encoded['code'])))
@@ -15,7 +15,7 @@
     function refresh() {
         fetch("https://swmad.vercel.app/test/code.json")
             .then(response => response.json())
-            .then(data => {encoded = data})
+            .then(data => { encoded = data })
     }
 </script>
 <button onclick="doit()">check the passcode</button>
